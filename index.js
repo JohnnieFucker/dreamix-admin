@@ -12,7 +12,10 @@ fs.readdirSync(`${__dirname}/lib/modules`).forEach((filename) => {
         const name = filename.substr(0, filename.lastIndexOf('.'));
         const _module = require(`./lib/modules/${name}`);// eslint-disable-line
         if (!_module.moduleError) {
-            Object.defineProperty(exports.modules, name, () => _module);
+            Object.defineProperty(exports.modules, name, { value: _module,
+                writable: true,
+                enumerable: true,
+                configurable: true });
         }
     }
 });
