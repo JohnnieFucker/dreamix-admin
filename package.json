@@ -1,6 +1,6 @@
 {
   "name": "dreamix-admin",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "dreamix-admin",
   "main": "index.js",
   "repository": {
@@ -20,8 +20,7 @@
     "dreamix-logger": "^1.0.0",
     "dreamix-monitor": "^1.0.0",
     "dreamix-scheduler": "^1.0.0",
-    "socket.io": "^2.0.4",
-    "socket.io-client": "^2.0.4",
+    "mqtt-connection": "^3.2.0",
     "v8-profiler": "^5.7.0"
   }
 }
